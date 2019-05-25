@@ -17,6 +17,13 @@ public class CDemo {
         z = c;
     }
     
+    void f1(){
+    }
+    
+    public CDemo(){
+        f1();
+    }
+    
     public CDemo(CDemo tmp){
         x=tmp.x;
         y=tmp.y;
@@ -24,6 +31,7 @@ public class CDemo {
     }
                     
     public CDemo(int p, int q){
+        this();
         x=p; 
         y=q;
     }
@@ -42,13 +50,6 @@ public class CDemo {
     }
 }
 /*
-    Constructor
-    --------------
-1) its method like body having same name as classname
-   and no return type (not even void also)
-    (you can have access modifiers with constructors)
-2) it may or may not have parameters.
-3) 
 
 
 */
